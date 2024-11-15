@@ -42,7 +42,7 @@ public class Meld {
                 return constructor;
             }
         }
-        throw new RuntimeException("No @Inject constructor found for class " + clazz);
+        throw new RuntimeException("No @Wired constructor found for class " + clazz);
     }
 
 
