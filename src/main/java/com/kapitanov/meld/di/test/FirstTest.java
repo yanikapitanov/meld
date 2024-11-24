@@ -13,4 +13,9 @@ public class FirstTest {
         this.second = second;
         System.out.println(second);
     }
+
+    @Override
+    public String toString() {
+        return "FirstTest [second=" + second + ", getClass()=" + getClass() + "]";
+    }
 }

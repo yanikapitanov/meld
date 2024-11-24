@@ -6,6 +6,15 @@ import com.kapitanov.meld.di.annotations.Service;
 @Service
 public class Second {
 
+    private final Third third;
+
     @Wired
-    public Second() {}
+    public Second(Third third) {
+        this.third = third;
+    }
+
+    @Override
+    public String toString() {
+        return "Second [third=" + third + "]";
+    }
 }
